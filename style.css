@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #efefef;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(109, 10, 61);
+  padding: 10px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  width: 80px;
+  margin-right: 45px;
+}
+.nav-l,
+.nav-r {
+  display: flex;
+  align-items: center;
+}
+.nav-l ul li {
+  list-style: none;
+  display: inline-block;
+}
+.nav-l ul li img {
+  width: 35px;
+  margin: 0 30px;
+}
+/* this is for user icon */
+.nav-user-icon img {
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.nav-user-icon {
+  margin-left: 30px;
+}
+.search-box {
+  background: #efefef;
+  width: 400px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.search-box img {
+  width: 18px;
+}
+.search-box input {
+  width: 100%;
+  background: transparent;
+  padding: 10px;
+  outline: none;
+  border: 0ch;
+}
+.online {
+  position: relative;
+}
+.online::after {
+  content: ""; /*add link here for logout page*/
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgb(65, 11, 230);
+  border-radius: 50%;
+  background: #0aed21;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* navbar editing end here */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5%;
+}
+.left-sidebar {
+  /* background:pink; */
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  display: block;
+  float: left;
+}
+.right-sidebar {
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  color: #626262;
+  display: block;
+  float: right;
+}
+.main-content {
+  flex-basis: 45%;
+}
+/* the imp link and shortcut link disign here */
+.imp-links a,
+.shortcut a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: bottom 30px;
+  color: #626262;
+  width: fit-content;
+}
+.imp-links a img {
+  width: 20px;
+  margin-right: 10px;
+}
+.imp-links a:last-child {
+  color: #1876f2;
+}
+.imp-links {
+  border-bottom: 2px solid #ccc;
+}
+.shortcut a img {
+  margin: 10px;
+  width: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.shortcut-links p {
+  margin: 25px 0;
+  color: #626262;
+  font-weight: 500;
+}
+/* this is for right-sidebar styling */
+.right-sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.right-sidebar-title h4 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.right-sidebar-title a {
+  text-decoration: none;
+  color: #1876f2;
+  font-size: 12px;
+}
+.event {
+  display: flex;
+  font: size 15px;
+  margin-bottom: 20px;
+}
+.left-event {
+  border-radius: 5px;
+  height: 65px;
+  width: 65px;
+  margin-right: 15px;
+  padding-top: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.event p {
+  font-size: 15px;
+}
+.event a {
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(203, 34, 178);
+}
+.left-event span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(203, 34, 178);
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 0;
+}
+/* advertisment start here */
+.right-sidebar-ads {
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+/* online section */
+.online-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.online-list .online img {
+  width: 40px;
+  border-radius: 50%;
+}
+.online-list .online {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.online-list .online::after {
+  top: unset;
+  bottom: 5px;
+  margin-right: 10px;
+}
+/* main content styling start here */
+.story-gallary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.story {
+  flex-basis: 18%;
+  padding-top: 32%;
+  position: relative;
+
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.story img {
+  position: absolute;
+  width: 45px;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+}
+
+.story-1 a:hover {
+  transform: scale(1.2);
+}
+.story p {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.story-1 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(./images/profile-pic.jpeg);
+}
+.story-2 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(./images/status-2.jfif);
+}
+.story-3 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(./images/status-3.jfif);
+}
+.story-4 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(./images/status-4.jpg);
+}
+.story-5 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 1)),
+    url(./images/status-5.jpg);
+}
+
+.write-post-container {
+  width: 100%;
+  background: white;
+  border-radius: 6px;
+  padding: 20px;
+  color: #626262;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+.user-profile img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-profile p {
+  margin-bottom: -5px;
+  font-weight: 500;
+  color: #626262;
+}
+.user-profile small {
+  font-size: 12px;
+}
+.post-input-container {
+  padding-left: 55px;
+  padding-top: 20px;
+}
+.post-input-container textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  resize: none;
+}
+
+.post-container {
+  width: 100%;
+  border-radius: 6px;
+  padding: 20px;
+  color: #626262;
+  margin: 20px 0px;
+  color: #fff;
+}
+.add-post-links {
+  display: flex;
+  margin-top: 10px;
+}
+.add-post-links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #626262;
+  margin-right: 30px;
+  font-size: 13px;
+}
+.add-post-links a img {
+  width: 20px;
+  margin-left: 10px;
+}
+.post-container {
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  color: #626262;
+  margin: 20px 0;
+}
+.user-profile span {
+  font-size: 13px;
+  color: #9a9a9a;
+}
+.post-text {
+  color: #9a9a9a;
+  margin: 15px 0;
+  font-size: 16px;
+}
+.post-img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.post-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.activity-icons div img {
+  width: 18px;
+  margin-right: 10px;
+}
+.activity-icons div {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.post-profile-icon {
+  display: flex;
+  align-items: center;
+}
+.post-profile-icon img {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+/* responsive code start here */
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .container {
+    margin-top: 140px;
+  }
+  .nav-r .search-box {
+    display: none;
+  }
+  .left-sidebar {
+    top: 100px;
+    height: 160px;
+  }
+  .right-sidebar {
+    display: none;
+  }
+}
